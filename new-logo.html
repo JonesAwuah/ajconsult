@@ -1,0 +1,244 @@
+logo_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AJ Consult Logo — Brand Master</title>
+  <style>
+    :root {
+      --color-primary: #01696f;
+      --color-primary-hover: #0c4e54;
+      --color-gold: #d19900;
+      --color-bg: #f7f6f2;
+      --color-text: #28251d;
+    }
+    
+    [data-theme="dark"] {
+      --color-primary: #4f98a3;
+      --color-primary-hover: #227f8b;
+      --color-gold: #e8af34;
+      --color-bg: #171614;
+      --color-text: #cdccca;
+    }
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Satoshi', 'Inter', sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    
+    .logo-showcase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+    
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 3rem;
+      background: var(--color-surface);
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px oklch(0.2 0.01 80 / 0.08);
+    }
+    
+    .logo-container svg {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: 0.05em;
+    }
+    
+    .favicon-showcase {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .favicon-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .favicon-box svg {
+      width: 48px;
+      height: 48px;
+    }
+    
+    .favicon-box small {
+      font-size: 0.75rem;
+      color: oklch(from var(--color-text) l c h / 0.6);
+    }
+    
+    .colors-section {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .color-swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    
+    .color-primary { background: var(--color-primary); color: white; }
+    .color-gold { background: var(--color-gold); color: var(--color-text); }
+    
+    .usage-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--color-surface);
+      border-radius: 1rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    .usage-section h3 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+    
+    .usage-section p {
+      font-size: 0.9rem;
+      color: oklch(from var(--color-text) l c h / 0.7);
+    }
+    
+    .download-btn {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    
+    .download-btn:hover {
+      background: var(--color-primary-hover);
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-showcase">
+    <!-- MAIN LOGO -->
+    <div class="logo-container">
+      <svg viewBox="0 0 200 200" aria-label="AJ Consult Logo" role="img">
+        <!-- Background circle with primary teal -->
+        <circle cx="100" cy="100" r="90" fill="var(--color-primary)" />
+        
+        <!-- A letterform - white geometric shape -->
+        <path d="M65 145 L65 55 L100 110 L100 145 L85 145 L85 95 L65 95 L65 145 Z" fill="white" />
+        
+        <!-- J letterform - white with gold accent -->
+        <path d="M115 145 L115 130 L100 130 L100 145 L115 145 Z" fill="white" />
+        <rect x="115" y="85" width="15" height="60" fill="white" />
+        <rect x="130" y="85" width="15" height="25" fill="var(--color-gold)" />
+        
+        <!-- Small gold accent dot -->
+        <circle cx="150" cy="50" r="6" fill="var(--color-gold)" />
+      </svg>
+      
+      <div class="logo-text">AJ CONSULT</div>
+    </div>
+    
+    <!-- FAVICON VARIANTS -->
+    <div class="favicon-showcase">
+      <div class="favicon-box">
+        <svg viewBox="0 0 48 48" aria-label="AJ Consult Favicon Light">
+          <circle cx="24" cy="24" r="22" fill="var(--color-primary)" />
+          <path d="M15 34 L15 14 L24 26 L24 34 L19 34 L19 21 L15 21 L15 34 Z" fill="white" />
+          <rect x="27" y="14" width="4" height="20" fill="white" />
+          <rect x="31" y="14" width="4" height="8" fill="var(--color-gold)" />
+          <circle cx="40" cy="10" r="2" fill="var(--color-gold)" />
+        </svg>
+        <small>Light Mode</small>
+      </div>
+      
+      <div class="favicon-box">
+        <svg viewBox="0 0 48 48" aria-label="AJ Consult Favicon Dark">
+          <circle cx="24" cy="24" r="22" fill="#4f98a3" />
+          <path d="M15 34 L15 14 L24 26 L24 34 L19 34 L19 21 L15 21 L15 34 Z" fill="#171614" />
+          <rect x="27" y="14" width="4" height="20" fill="#171614" />
+          <rect x="31" y="14" width="4" height="8" fill="#e8af34" />
+          <circle cx="40" cy="10" r="2" fill="#e8af34" />
+        </svg>
+        <small>Dark Mode</small>
+      </div>
+    </div>
+    
+    <!-- COLOR PALETTE -->
+    <div class="colors-section">
+      <div class="color-swatch color-primary">
+        Primary
+        <span>#01696f</span>
+      </div>
+      <div class="color-swatch color-gold">
+        Gold
+        <span>#d19900</span>
+      </div>
+    </div>
+    
+    <!-- USAGE GUIDE -->
+    <div class="usage-section">
+      <h3>Brand Usage Guidelines</h3>
+      <p>
+        This logo is the master brand for all AJ Consult properties. Use the primary teal 
+        (#01696f) for main brand elements and gold (#d19900) for accents and highlights.
+        The logo works at any size from 24px to 200px+.
+      </p>
+    </div>
+    
+    <!-- DOWNLOAD BUTTON -->
+    <button class="download-btn" onclick="downloadLogo()">Download Logo Package</button>
+  </div>
+  
+  <script>
+    function downloadLogo() {
+      const svg = document.querySelector('.logo-container svg');
+      const svgData = svg.outerHTML;
+      const blob = new Blob([svgData], {type: 'image/svg+xml'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'aj-consult-logo.svg';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
+"""
+
+with open('~/aj-consult-logo.html', 'w') as f:
+    f.write(logo_html)
+
+print("Logo showcase created at ~/aj-consult-logo.html")
